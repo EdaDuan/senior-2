@@ -1,0 +1,44 @@
+.EnrollPosition {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 31%;
+  border-radius: 5% 5% 0 0;
+  overflow: hidden;
+  background:#E0E0E0;
+}
+.position ul {
+  width: 100%;
+  height: 6.4rem;
+  overflow: scroll;
+}
+.position li {
+  border-top: 0.1rem solid #E0E0E0;
+  width: 100%;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  background: #F7F7FB;
+  color: #000000;
+}
+.position li:hover{
+  color: #00C176;
+}
+.sure {
+  width: 100%;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  text-align: center;
+  margin-top: 0.6rem;
+  background: #F7F7FB;
+  color: #999;
+}

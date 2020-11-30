@@ -1,0 +1,17 @@
+.enrollInput {
+  /* width: 235px; */
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  /* background: red; */
+}
+.enrollInput input {
+  width: 86%;
+  height: 1.3rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.enrollInput input::-webkit-input-placeholder{
+  color: #E0E0E0;
+}

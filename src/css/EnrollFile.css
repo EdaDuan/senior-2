@@ -1,0 +1,8 @@
+.choose {
+  display: inline-block;
+  margin-top: 0.3rem;
+  width: 0.375em;
+  height: 0.375em;
+  background: #00C176;
+  border: 0.1rem solid #E0E0E0;
+}
