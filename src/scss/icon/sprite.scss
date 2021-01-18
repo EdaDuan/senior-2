@@ -1,0 +1,45 @@
+@function px2rem($px) {
+  $rem: 40;
+  @return #{$px/$rem}rem;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../../imgs/sprite/sprite.png);
+  background-size: px2rem(214) px2rem(183);
+}
+.icon-argument {
+  width: px2rem(12);
+  height: px2rem(12);
+  background-position: px2rem(-110) px2rem(-112);
+}
+.icon-argumentd {
+  width: px2rem(12);
+  height: px2rem(12);
+  background-position: px2rem(-162) px2rem(-112);
+}
+.icon-btn-load {
+  width: px2rem(102);
+  height: px2rem(32);
+  background-position: px2rem(-112) px2rem(0);
+}
+.icon-chenggong {
+  width: px2rem(72);
+  height: px2rem(72);
+  background-position: px2rem(0) px2rem(0);
+}
+.icon-error {
+  width: px2rem(14);
+  height: px2rem(14);
+  background-position: px2rem(-56) px2rem(-112);
+}
+.icon-row {
+  width: px2rem(9);
+  height: px2rem(14);
+  background-position: px2rem(0) px2rem(-169);
+}
+.icon-tip {
+  width: px2rem(16);
+  height: px2rem(17);
+  background-position: px2rem(0) px2rem(-112);
+}

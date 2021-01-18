@@ -1,0 +1,30 @@
+@import "../../scss/px2rem.scss";
+.clearfix:after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.select-input-item {
+  position: relative;
+  padding: px2rem(22) 0 px2rem(20);
+  border-top: 1px solid #f1f1f1;
+  width: calc(100% - 2.65rem);
+  margin-right: 0;
+  float: right;
+}
+.select-input-item input {
+  width: px2rem(207);
+  height: 100%;
+  height: px2rem(21);
+  line-height: px2rem(21);
+  border: none;
+  outline: none;
+  vertical-align: bottom;
+  font-size: px2rem(15);
+}
+.select-input-item input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #e0e0e0;
+}

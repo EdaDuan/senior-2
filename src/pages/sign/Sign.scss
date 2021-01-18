@@ -1,0 +1,107 @@
+@import "../../scss/px2rem.scss";
+.sign {
+  overflow-y: scroll;
+}
+.banner {
+  width: 100%;
+  height: px2rem(128);
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.line {
+  border-bottom: 1px solid #f1f1f1;
+}
+/* 课程选择 */
+.course_choose {
+  padding: px2rem(26) px2rem(16) 0;
+}
+.sign_title {
+  font-size: px2rem(20);
+  font-family: "PingFang SC";
+  font-weight: bold;
+  font-style: normal;
+}
+.sign_title .xinhao::before {
+  content: "*";
+  color: red;
+}
+.required {
+  display: inline-block;
+  line-height: px2rem(20);
+  font-size: px2rem(14);
+  font-weight: 500;
+  color: #999;
+}
+.sign_tip {
+  background-color: #fff0e3;
+  border-radius: px2rem(4.2);
+  padding: px2rem(8) px2rem(16);
+  color: #ff8018;
+  font-size: px2rem(14);
+  margin-top: px2rem(13);
+  margin-bottom: px2rem(6);
+}
+.sign_tip .tip {
+  display: inline-block;
+  line-height: px2rem(23);
+  margin-left: px2rem(10);
+  vertical-align: middle;
+}
+.sign_tip p {
+  padding-top: px2rem(3);
+  line-height: px2rem(20);
+}
+.course > div:nth-child(n + 2) {
+  border-top: 1px solid #f1f1f1;
+}
+/* 个人信息 */
+.msg_shoose {
+  border-top: px2rem(10) solid #f7f7fb;
+  padding: 0 px2rem(16);
+}
+.msg_shoose > div:nth-child(n + 2) {
+  border-top: 1px solid #f1f1f1;
+}
+/* 联系方式 */
+.connect_shoose {
+  border-top: px2rem(10) solid #f7f7fb;
+  padding: 0 px2rem(16);
+}
+.connect > div:nth-child(n + 1) {
+  border-bottom: 1px solid #f1f1f1;
+}
+.noregister {
+  margin-top: px2rem(14);
+  height: px2rem(32);
+  line-height: px2rem(32);
+  padding-left: px2rem(16);
+  font-size: px2rem(14);
+  color: #ff8018;
+  background: #fafafa;
+  border-radius: px2rem(4);
+}
+
+.file_choose {
+  font-size: px2rem(12);
+  width: px2rem(230);
+  overflow: hidden;
+  margin: px2rem(24) px2rem(61) 0 px2rem(69);
+  color: #666666;
+}
+.file {
+  display: inline-block;
+  margin-top: px2rem(-16);
+  margin-left: px2rem(20);
+}
+.submit {
+  width: 100%;
+  height: px2rem(48);
+  margin-bottom: 36px;
+  background: #00c176;
+  border-radius: px2rem(4);
+  border: none;
+  font-size: px2rem(16);
+  color: #fff;
+}

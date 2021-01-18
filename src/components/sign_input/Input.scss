@@ -1,0 +1,73 @@
+@import "../../scss/px2rem.scss";
+.form-input-box {
+  position: relative;
+  font-size: px2rem(16);
+}
+.form-input-con {
+  padding: px2rem(22) 0 px2rem(20);
+}
+.form-input-required {
+  position: absolute;
+  width: px2rem(9);
+  color: #f36861;
+}
+.form-input-name {
+  float: left;
+  margin-left: px2rem(9);
+  width: px2rem(64);
+  line-height: px2rem(22);
+  margin-right: px2rem(33);
+  white-space: nowrap;
+  width: px2rem(64);
+  font-family: "PingFang SC";
+  font-weight: bold;
+  font-style: normal;
+  color: #333333;
+  text-align-last: justify;
+}
+.form-input-name span {
+  width: 12%;
+  color: #f36861;
+}
+.form-input-fl {
+  float: left;
+}
+.form-input {
+  position: relative;
+  width: 100%;
+  height: px2rem(21);
+  line-height: px2rem(21);
+  vertical-align: middle;
+}
+.form-input input {
+  width: px2rem(207);
+  height: 100%;
+  border: none;
+  outline: none;
+  vertical-align: bottom;
+  font-size: px2rem(15);
+}
+.form-input input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #e0e0e0;
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+// 错误提示消息
+.errorLi {
+  position: relative;
+  top: px2rem(4);
+  // background: pink;
+  font-size: px2rem(12);
+  line-height: px2rem(12);
+  color: #f36861;
+}
+.errorLi span {
+  margin-left: px2rem(4);
+  vertical-align: middle;
+}

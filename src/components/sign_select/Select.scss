@@ -1,0 +1,89 @@
+@import "../../scss/px2rem.scss";
+.form-select-box {
+  position: relative;
+  font-size: px2rem(16);
+}
+.form-select-con {
+  padding: px2rem(22) 0 px2rem(20);
+}
+.form-select-required {
+  position: absolute;
+  width: px2rem(9);
+  color: #f36861;
+}
+.form-select-name {
+  float: left;
+  margin-left: px2rem(9);
+  width: px2rem(64);
+  line-height: px2rem(22);
+  margin-right: px2rem(33);
+  white-space: nowrap;
+  font-family: "PingFang SC";
+  font-weight: bold;
+  font-style: normal;
+  color: #333333;
+  text-align-last: justify;
+}
+.form-select-fl {
+  float: left;
+}
+.form-select {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 2.5rem);
+  height: px2rem(21);
+  line-height: px2rem(21);
+  vertical-align: bottom;
+}
+.form-select input {
+  width: px2rem(207);
+  height: 100%;
+  border: none;
+  outline: none;
+  vertical-align: bottom;
+  font-size: px2rem(15);
+}
+.form-select input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #e0e0e0;
+}
+.row {
+  position: absolute;
+  right: 0;
+  margin-top: px2rem(3);
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+// 错误提示消息
+.selectError {
+  position: relative;
+  top: px2rem(4);
+  // background: orange;
+  font-size: px2rem(12);
+  line-height: px2rem(12);
+  color: #f36861;
+}
+.seletInput {
+  float: left;
+  margin-top: px2rem(-80);
+  color: #f36861;
+  list-style: none;
+  line-height: px2rem(12);
+  font-size: px2rem(12);
+}
+.selectError span,
+.seletInput span {
+  margin-left: px2rem(4);
+  vertical-align: middle;
+}
+.errorShow {
+  display: inline-block;
+}
+.errorHidden {
+  display: none;
+}

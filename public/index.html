@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" style="font-size: 16px;">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <script src="./rem.js"></script>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -25,7 +24,92 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>4399云课堂_线下培训_专注大学生就业培训</title>
+    <script>
+      !(function (win) {
+        function rem(uiWidth, maxWidth) {
+          function b(unresize) {
+            if (window.navigator.appVersion.match(/window|Macintosh/gi)) {
+              m =
+                f.getBoundingClientRect().width > maxWidth
+                  ? Math.max(uiWidth, 750)
+                  : f.getBoundingClientRect().width;
+            } else {
+              m = f.getBoundingClientRect().width;
+            }
+            ratio = uiWidth / 40;
+            if (unresize) {
+              h = f.getBoundingClientRect().height;
+              if (!h) {
+                setTimeout(function () {
+                  b(typeof unresize != "undefined" ? unresize : false);
+                }, 100);
+                return;
+              }
+              if (h > m) {
+                (win.rem = m / ratio), (f.style.fontSize = win.rem + "px");
+              } else {
+                (win.rem = h / ratio), (f.style.fontSize = win.rem + "px");
+              }
+            } else {
+              (win.rem = m / ratio), (f.style.fontSize = win.rem + "px");
+            }
+            var j = parseFloat(win.getComputedStyle(f, null).fontSize);
+            if (win.rem != j) {
+              win.rem = (win.rem * win.rem) / j;
+              f.style.fontSize = win.rem + "px";
+            }
+          }
+          var c,
+            d = win.navigator.appVersion.match(/iphone/gi)
+              ? window.devicePixelRatio
+              : 1,
+            e = 1,
+            f = document.documentElement,
+            g = document.createElement("meta");
+          if (
+            ((win.dpr = d),
+            window.addEventListener(
+              "resize",
+              function () {
+                clearTimeout(c),
+                  (c = setTimeout(function () {
+                    b(typeof unresize != "undefined" ? unresize : false);
+                  }, 300));
+              },
+              !1
+            ),
+            window.addEventListener(
+              "pageshow",
+              function (a) {
+                window.persisted && (clearTimeout(c), (c = setTimeout(b, 300)));
+              },
+              !1
+            ),
+            f.setAttribute("data-dpr", d),
+            g.setAttribute("name", "viewport"),
+            g.setAttribute(
+              "content",
+              "initial-scale=" +
+                e +
+                ", maximum-scale=" +
+                e +
+                ", minimum-scale=" +
+                e +
+                ", user-scalable=no,viewport-fit=cover"
+            ),
+            f.firstElementChild)
+          )
+            f.firstElementChild.appendChild(g);
+          else {
+            var h = document.createElement("div");
+            h.appendChild(g), document.write(h.innerHTML);
+          }
+          b(typeof unresize != "undefined" ? true : "");
+        }
+        rem(375, 960);
+      })(window);
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

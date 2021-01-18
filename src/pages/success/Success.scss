@@ -1,0 +1,31 @@
+@import "../../scss/px2rem.scss";
+.success {
+  text-align: center;
+}
+.chenggong {
+  margin-top: px2rem(71);
+}
+.successText {
+  margin-top: px2rem(26);
+  padding-left: px2rem(37);
+  padding-right: px2rem(32);
+  height: px2rem(25);
+  line-height: px2rem(25);
+  font-family: "PingFang SC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: px2rem(18);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.successTips {
+  margin-top: px2rem(9);
+  padding-left: px2rem(33);
+  padding-right: px2rem(28);
+  font-family: "PingFang SC";
+  font-size: px2rem(15);
+  font-style: normal;
+  font-weight: 400;
+  color: #ff8018;
+}

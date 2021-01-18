@@ -1,0 +1,91 @@
+@import "../../scss/px2rem.scss";
+.form-code-box {
+  position: relative;
+  font-size: px2rem(16);
+}
+.form-code-con {
+  padding: px2rem(22) 0 px2rem(20);
+}
+.form-code-required {
+  position: absolute;
+  width: px2rem(9);
+  color: #f36861;
+}
+.form-code-name {
+  float: left;
+  margin-left: px2rem(9);
+  width: px2rem(64);
+  line-height: px2rem(22);
+  margin-right: px2rem(33);
+  white-space: nowrap;
+  width: px2rem(64);
+  font-family: "PingFang SC";
+  font-weight: bold;
+  font-style: normal;
+  color: #333333;
+  text-align-last: justify;
+}
+.form-code-name span {
+  width: 12%;
+  color: #f36861;
+}
+.form-code-fl {
+  float: left;
+}
+.form-code {
+  position: relative;
+  width: 100%;
+  height: px2rem(21);
+  line-height: px2rem(21);
+  vertical-align: middle;
+}
+.form-code input {
+  width: px2rem(207);
+  height: 100%;
+  border: none;
+  outline: none;
+  vertical-align: bottom;
+  font-size: px2rem(15);
+}
+.form-code input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #e0e0e0;
+}
+.code-btn {
+  position: absolute;
+  margin-top: px2rem(-8);
+  right: 0;
+  width: px2rem(102);
+  height: px2rem(32);
+  line-height: px2rem(32);
+  text-align: center;
+  font-size: px2rem(14);
+  border: none;
+  color: #fff;
+}
+.code-btn-wgite {
+  background: #dedede;
+}
+.code-btn-green {
+  background: #00C176;
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+// 错误提示消息
+.errorLi {
+  position: relative;
+  top: px2rem(4);
+  // background: pink;
+  font-size: px2rem(12);
+  line-height: px2rem(12);
+  color: #f36861;
+}
+.errorLi span {
+  margin-left: px2rem(4);
+  vertical-align: middle;
+}
